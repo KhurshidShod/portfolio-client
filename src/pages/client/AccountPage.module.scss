@@ -1,0 +1,183 @@
+.editModal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  overflow-y: auto !important;
+  z-index: 99 !important;
+  form{
+  overflow-y: auto !important;
+
+    background-color: transparent;
+    div{
+      flex-grow: 1;
+    }
+    label{
+      color: white !important;
+    }
+    input{
+      color: white !important;
+      background-color: transparent !important;
+      &::placeholder{
+        color: white !important;
+      }
+    }
+    textarea{
+      background-color: transparent;
+    }
+  }
+}
+.account {
+  width: 100%;
+  background-color: #121212;
+  padding-top: 100px;
+  min-height: 100vh;
+  color: white;
+  padding-bottom: 3rem;
+  font-family: "Federo";
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    &_user {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 3rem;
+      div {
+        width: calc(100% / 3 - 3rem);
+        min-width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 1rem;
+        flex-grow: 1;
+        &:nth-child(1) {
+          div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            div {
+              display: flex;
+              flex-direction: column;
+              justify-content: start;
+              align-items: start;
+              gap: 5px;
+            }
+          }
+        }
+        h1 {
+          width: 100%;
+          font-family: "Federo";
+          border-bottom: 1px solid white;
+        }
+        img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+        }
+        h3 {
+          font-family: "Federo";
+        }
+        p {
+          font-family: "Federo";
+        }
+        span {
+          font-family: "Bigilla";
+        }
+      }
+    }
+    &_skills {
+      width: 100%;
+      font-size: 42px;
+      margin-top: 5rem;
+      h1 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        span {
+          flex-grow: 1;
+          height: 1px;
+          background-color: white;
+        }
+        button {
+          width: 115px;
+          height: 40px;
+          font-family: "Federo";
+          font-size: 24px;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          background-color: #353535;
+          color: white;
+          cursor: pointer;
+          transition: .1s linear;
+          &:hover{
+            background-color: transparent;
+          }
+        }
+      }
+      &_wrapper {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 1rem;
+        p{
+          width: 100%;
+          text-align: center;
+          padding-top: 5rem;
+          padding-bottom: 5rem;
+          font-size: 32px;
+        }
+        &_skill {
+          display: flex;
+          justify-content: start;
+          align-items: start;
+          flex-direction: column;
+          width: 250px;
+          background-color: #252525;
+          padding: 1rem;
+          border-radius: 10px;
+          gap: 0.5rem;
+          flex-grow: 1;
+          box-shadow: rgb(0, 0, 0) 0px 7px 29px 0px;
+
+          p {
+            font-size: 18px;
+          }
+          div {
+            width: 100%;
+            height: 5px;
+            background-color: #353535;
+            border-radius: 25px;
+            position: relative;
+            span {
+              height: 5px;
+              background-color: #bb86fc;
+              position: absolute;
+              border-radius: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
